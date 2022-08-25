@@ -272,29 +272,66 @@ margin-top: 30px;
 .portfolio {
   font-size: 0;
 }
+.portfolio-menu {
+  display: flex;
+justify-content: center;
+  margin-bottom: 50px;
+  gap: 8px;
+  text-decoration: underline;
+}
 .main-portfolio-section {
   background-color: #eeeeee;
 }
+
 .portfolio-btn {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
+border-radius: 4px;
+  padding: 6px 22px 6px 22px;
+    background: #F5F4FA;
 }
+
 .btn-all {
   background-color: var(--accent-color);
   color: var(--text-color-theme-dark);
+  padding: 6px 25px 6px 25px;
 }
+
 .portfolio-btn:hover,
 .portfolio-btn:focus {
   background-color: var(--accent-color);
   color: var(--text-color-theme-dark);
+  
 }
+.project-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+  
+.project-item {
+  background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    
+}
+/* .project-img {
+  margin-bottom: 20px;
+} */
+/* .project-item  :not(:nth-child(3n)){
+  margin-right: 30px;
+}
+.project-item :not(:nth-last-child(-n+3)) {
+  margin-bottom: 30px;
+} */
 .name-project {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  /* margin-bottom: 4px; */
+  margin: 20px 24px 0 24px;
 }
 .name-poject-direction {
   font-weight: 400;
@@ -302,4 +339,6 @@ margin-top: 30px;
   line-height: 1.88;
 
   color: var(--secondary-text-color);
+  /* margin-bottom: 20px; */
+  margin: 4px 24px 20px 24px;
 }
