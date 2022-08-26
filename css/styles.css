@@ -50,19 +50,24 @@ width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
 }
-/* heder */
-.heder .container {
+/* header */
+
+.header {
+  padding: 24px 0px;
+  border: 1px solid #ECECEC;;
+}
+.header .container {
   display: flex;
     align-items: center;
     padding-left: 15px;
     padding-right: 15px;
-        padding-top: 24px;
-        padding-bottom: 25px;
+        /* padding-top: 24px;
+        padding-bottom: 25px; */
       }
 
-.heder-nav, 
+.header-nav, 
 .logo,
-.heder-menu,
+.header-menu,
  .contacts {
   display: flex;
   align-items: center;
@@ -75,18 +80,18 @@ width: 1200px;
   color: var(--main-text-color);
   margin-right: 93px;
 }
-.heder-menu {
+.header-menu {
   gap: 50px;
 }
 
-.heder-menu-link {
+.header-menu-link {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
 }
-.heder-menu-link:hover,
-.heder-menu-link:focus {
+.header-menu-link:hover,
+.header-menu-link:focus {
   color: var(--accent-color);
 }
 .color-studio {
@@ -136,8 +141,12 @@ width: 1200px;
   text-transform: uppercase;
 
   color: var(--text-color-theme-dark);
-  padding-left: 252px;
-  padding-right: 252px;
+  /* padding-left: 252px;
+  padding-right: 252px; */
+  margin-left: auto;
+  margin-right: auto;
+  Width: 696px;
+  Height: 120px
 }
 .section-btn {
   font-weight: 700;
@@ -150,6 +159,8 @@ width: 1200px;
 margin: auto;
 padding: 10px 32px 10px 32px;
 margin-top: 30px;
+border: none;
+border-radius: 4px;
 
   color: var(--text-color-theme-dark);
   background-color: var(--accent-color);
@@ -161,11 +172,25 @@ margin-top: 30px;
 /*section 2*/
 
 .text-main-about {
-  font-size: 0;
+  /* font-size: 0; */
+position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .about-menu {
   display: flex;
   gap: 30px;
+}
+.about-menu-item {
+  width: 270px;
 }
 .title-about {
   line-height: 1.14;
@@ -180,7 +205,9 @@ margin-top: 30px;
 }
 
 /*section 3*/
-
+.doing {
+  padding-top: 0;
+}
 .section-title {
   font-size: 36px;
   line-height: 1.16;
@@ -207,7 +234,7 @@ margin-top: 30px;
 }
 
 .team-img {
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 .photo-team {
@@ -222,11 +249,10 @@ margin-top: 30px;
   margin-bottom: 10px;
 }
 .profession {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 
   color: var(--secondary-text-color);
 }
@@ -235,7 +261,7 @@ margin-top: 30px;
 .footer {
   background-color: #2f303a;
 }
-.footer .container {
+.footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -246,6 +272,12 @@ margin-top: 30px;
   line-height: 1.19;
 
   color: var(--text-color-theme-dark);
+  
+  margin-bottom: 20px;
+}
+
+.address-item :not(:last-child) {
+  margin-bottom: 9px;
 }
 .address-link {
   font-style: normal;
@@ -257,6 +289,7 @@ margin-top: 30px;
 .address-link:hover {
   color: var(--accent-color);
 }
+
 .contact-link-footer {
   font-style: normal;
   font-weight: 400;
@@ -268,6 +301,7 @@ margin-top: 30px;
 .contact-link-footer:focus {
   color: var(--accent-color);
 }
+
 /*main portfolio*/
 .portfolio {
   font-size: 0;
@@ -280,7 +314,7 @@ justify-content: center;
   text-decoration: underline;
 }
 .main-portfolio-section {
-  background-color: #eeeeee;
+  background-color: var(--text-color-theme-dark);
 }
 
 .portfolio-btn {
@@ -291,6 +325,7 @@ justify-content: center;
 border-radius: 4px;
   padding: 6px 22px 6px 22px;
     background: #F5F4FA;
+    border: none;
 }
 
 .btn-all {
@@ -314,7 +349,8 @@ border-radius: 4px;
 .project-item {
   background: #FFFFFF;
     border: 1px solid #EEEEEE;
-    
+    width: calc((100% - 60px) / 3);
+    /* height: calc((100% -)); */
 }
 /* .project-img {
   margin-bottom: 20px;
@@ -331,7 +367,7 @@ border-radius: 4px;
   line-height: 2;
   letter-spacing: 0.06em;
   /* margin-bottom: 4px; */
-  margin: 20px 24px 0 24px;
+  padding: 20px 24px 0 24px;
 }
 .name-poject-direction {
   font-weight: 400;
@@ -340,5 +376,6 @@ border-radius: 4px;
 
   color: var(--secondary-text-color);
   /* margin-bottom: 20px; */
-  margin: 4px 24px 20px 24px;
+  margin-top: 4px;
+  padding: 0 24px 20px 24px;
 }
